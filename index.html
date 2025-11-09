@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-link">Accueil</a>
+            <a href="#apropos" class="nav-link">À propos</a>
+            <a href="#competences" class="nav-link">Compétences</a>
+            <a href="#projets" class="nav-link">Projets</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <div class="container" id="accueil">
         <header>
             <h1>Matteo De Marco</h1>
             <p class="subtitle">Développeur Full Stack</p>
         </header>
 
         <div class="main-content">
-            <div class="section">
+            <div class="section" id="apropos">
                 <h2>À Propos</h2>
                 <p class="about-text">
                     Je suis étudiant en 3ᵉ année de BUT Informatique à Dijon, je suis plutôt spécialisé dans le développement web mais 
@@ -25,7 +35,7 @@
                 </p>
             </div>
 
-            <div class="section">
+            <div class="section" id="competences">
                 <h2>Technologies & Compétences</h2>
                 
                 <div class="tech-category">
@@ -40,7 +50,7 @@
                             <span>C#</span>
                         </div>
                         <div class="tech-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="tech-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png" alt="C" class="tech-logo">
                             <span>C</span>
                         </div>
                         <div class="tech-card">
@@ -147,10 +157,10 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="projets">
                 <h2>Mon projet personnel</h2>
                 
-                <div class="project-preview">
+                <div class="project-preview" id="projets">
                     <h3>Puissance 4</h3>
                     <h4>(Première version, affichage console)</h4>
                     <p>
@@ -183,12 +193,24 @@
                     </p>
                     <a href="custer.html"><button class="btn">Voir le projet</button></a>
                 </div>
+
+                <div class="project-preview">
+                    <h3>E-Lieux </h3>
+                    <p>
+                        E-Lieu est une application WEB qui a pour but de créer, trier et envoyer des états des lieux. L'application WEB permettra notamment de documenter efficacement les conditions des propriétés avec des informations détaillées comme la date d'ouverture, le nom du locataire, l'adresse et plein d'autre information.
+
+                        Il facilite la création et la gestion des rapports d'état des lieux en intégrant des photos, des vidéos et des observations, assurant ainsi une documentation précise et accessible pour la gestion immobilière. 
+
+                        Sur cette application WEB, il y a un tableau de bord permettant de voir les informations importantes sous forme de graphiques.
+                    </p>
+                    <a href="elieu.html"><button class="btn">Voir le projet</button></a>
+                </div>
             </div>
         </div>
 
         <footer>
             <p>&copy; 2025 Matteo De Marco. Tous droits réservés.</p>
-            <div class="social-links">
+            <div class="social-links" id="contact">
                 <a href="https://linkedin.com/in/matteo-de-marco-0303512bb" target="_blank">LinkedIn</a>
                 <a href="mailto:matteo89.demarco@gmail.com">Email</a>
             </div>
