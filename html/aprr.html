@@ -12,6 +12,7 @@
         <div class="nav-container">
             <a href="../index.html#accueil" class="nav-link">Accueil</a>
             <a href="#objectifs" class="nav-link">Objectifs</a>
+            <a href="#resultats" class="nav-link">Résultats</a>
             <a href="#contact" class="nav-link">Contact</a>
             <a href="../documents/cvMatteoDeMarco.pdf" class="nav-link" download>
                 Télécharger mon CV
@@ -27,18 +28,39 @@
 
                     <h3 id="objectifs">Objectif principal</h3>
                     <p>
-                        Ma mission principale est d'assurer la conformité de systèmes Debian notamment en vérifiant :
+                        Ma mission principale est d'automatiser la vérification de la conformité de systèmes Debian notamment en vérifiant :
                         <ul>
                             <li>Les packages, leur présence/absence et version</li>
-                            <li>fichiers de configuration</li>
+                            <li>Fichiers de configuration</li>
                         </ul>
-
-                        Pour cela j'ai à ma disposition des outils comme SUSE Manager, Ansible avec Jenkins et Grafana.
-                        Initialement, j'ai utilisé SUSE Manager pour vérifier la conformité de systèmes Debian, l'outil est très complet mais
-                        il manque une page permettant de visualiser les résultats de manière globale. C'est pourquoi j'utilise désormais
-                        Ansible avec Jenkins, pour automatiser les vérifications de conformité afin de générer des rapports.
-                        Ces rapports permettent de réaliser des graphiques avec Grafana pour visualiser les résultats de manière globale.
+                        <p>
+                        Pour cela j'ai défini avec mon tuteur un ensemble de règles à respecter pour que le système soit conforme. Ces règles sont définies dans un document Excel.
+                        Une fois les règles définies, j'ai mis en place une infrastructure Ansible avec Jenkins et Grafana.
+                        </p>
                     </p>
+                    <h3 id="resultats">Résultats</h3>
+                    Aperçu général de tous les serveurs :
+
+                    <img src="../images/aprr/apercuGeneral.png" alt="">
+
+                    <img src="../images/aprr/apercuGeneral2.png" alt="">
+
+                    <br>
+                    Liste des serveurs les moins conformes :
+
+                    <img src="../images/aprr/listeServeur.png" alt="">
+
+                    <br>
+
+                    Evolution de la conformité des serveurs :
+
+                    <img src="../images/aprr/evolutionConformite.png" alt="">
+
+                    <br>
+
+                    Détail du serveur1 qui est le moins conforme :
+
+                    <img src="../images/aprr/serveur1.png" alt="">
 
                     <div class="project-tags">
                         <span class="tag">SUSE Manager</span>
