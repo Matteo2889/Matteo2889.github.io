@@ -161,6 +161,10 @@ h1 {
     width: 40px;
     height: 40px;
     object-fit: contain;
+    background: #ffffff;
+    padding: 6px;
+    border-radius: 10px;
+    box-sizing: content-box; /* la pastille grandit autour du logo */
 }
 
 .page {
